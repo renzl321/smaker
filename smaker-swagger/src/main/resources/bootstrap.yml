@@ -1,0 +1,22 @@
+server:
+  port: 2019
+
+spring:
+  application:
+    name: smaker-swagger
+  # 配置中心
+  cloud:
+    nacos:
+        discovery:
+            server-addr: rzl-nacos:8848
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+  profiles:
+    active: dev
+
+
+
+

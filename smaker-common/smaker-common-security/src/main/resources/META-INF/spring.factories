@@ -1,0 +1,8 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.smakercloud.smaker.common.security.component.PermissionService,\
+  com.smakercloud.smaker.common.security.component.AccessCloudDeniedHandler,\
+  com.smakercloud.smaker.common.security.component.CloudSecurityInnerAspect,\
+  com.smakercloud.smaker.common.security.component.ResourceAuthExceptionEntryPoint,\
+  com.smakercloud.smaker.common.security.component.CloudResourceAutoConfiguration,\
+  com.smakercloud.smaker.common.security.feign.CloudFeignClientConfiguration,\
+  com.smakercloud.smaker.common.security.service.CloudUserDetailsServiceImpl

@@ -1,0 +1,19 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: smaker-gateway
+  # 配置中心
+  cloud:
+    nacos:
+        discovery:
+            server-addr: smakercloud-nacos:8848
+        config:
+            file-extension: yml
+            server-addr: smakercloud-nacos:8848
+  profiles:
+    active: dev
+
+
+

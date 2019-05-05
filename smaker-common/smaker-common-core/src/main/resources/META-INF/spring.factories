@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.smakercloud.smaker.common.core.config.JacksonConfig,\
+  com.smakercloud.smaker.common.core.config.RedisConfig,\
+  com.smakercloud.smaker.common.core.config.RestTemplateConfig,\
+  com.smakercloud.smaker.common.core.config.FilterIgnorePropertiesConfig,\
+  com.smakercloud.smaker.common.core.exception.GlobalExceptionHandler,\
+  com.smakercloud.smaker.common.core.util.SpringContextHolder

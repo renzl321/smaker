@@ -1,0 +1,7 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.smakercloud.smaker.admin.api.feign.fallback.RemoteUserServiceFallbackImpl,\
+  com.smakercloud.smaker.admin.api.feign.fallback.RemoteLogServiceFallbackImpl,\
+  com.smakercloud.smaker.admin.api.feign.fallback.RemoteTokenServiceFallbackImpl,\
+  com.smakercloud.smaker.admin.api.feign.factory.RemoteUserServiceFallbackFactory,\
+  com.smakercloud.smaker.admin.api.feign.factory.RemoteLogServiceFallbackFactory,\
+  com.smakercloud.smaker.admin.api.feign.factory.RemoteTokenServiceFallbackFactory

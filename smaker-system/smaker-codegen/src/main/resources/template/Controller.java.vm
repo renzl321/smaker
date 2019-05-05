@@ -1,0 +1,85 @@
+
+package ${package}.${moduleName}.controller;
+
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.smakercloud.smaker.common.core.util.SmakerResult;
+import com.smakercloud.smaker.common.log.annotation.SysLog;
+import ${package}.${moduleName}.entity.${className};
+import ${package}.${moduleName}.service.${className}Service;
+import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.*;
+
+
+/**
+ * ${comments}
+ *
+ * @author renzl ${author}
+ * @date ${datetime}
+ */
+@RestController
+@AllArgsConstructor
+@RequestMapping("/${pathName}")
+public class ${className}Controller {
+
+  private final  ${className}Service ${classname}Service;
+
+  /**
+   * 简单分页查询
+   * @param page 分页对象
+   * @param ${classname} ${comments}
+   * @return
+   */
+  @GetMapping("/page")
+  public SmakerResult<IPage<${className}>> get${className}Page(Page<${className}> page, ${className} ${classname}) {
+    return  new SmakerResult<>(${classname}Service.get${className}Page(page,${classname}));
+  }
+
+
+  /**
+   * 通过id查询单条记录
+   * @param ${pk.lowerAttrName}
+   * @return R
+   */
+  @GetMapping("/{${pk.lowerAttrName}}")
+  public SmakerResult<${className}> getById(@PathVariable("${pk.lowerAttrName}") ${pk.attrType} ${pk.lowerAttrName}){
+    return new SmakerResult<>(${classname}Service.getById(${pk.lowerAttrName}));
+  }
+
+  /**
+   * 新增记录
+   * @param ${classname}
+   * @return R
+   */
+  @SysLog("新增${comments}")
+  @PostMapping
+  @PreAuthorize("@pms.hasPermission('${moduleName}_${pathName}_add')")
+  public SmakerResult save(@RequestBody ${className} ${classname}){
+    return new SmakerResult<>(${classname}Service.save(${classname}));
+  }
+
+  /**
+   * 修改记录
+   * @param ${classname}
+   * @return R
+   */
+  @SysLog("修改${comments}")
+  @PutMapping
+  @PreAuthorize("@pms.hasPermission('${moduleName}_${pathName}_edit')")
+  public SmakerResult update(@RequestBody ${className} ${classname}){
+    return new SmakerResult<>(${classname}Service.updateById(${classname}));
+  }
+
+  /**
+   * 通过id删除一条记录
+   * @param ${pk.lowerAttrName}
+   * @return R
+   */
+  @SysLog("删除${comments}")
+  @DeleteMapping("/{${pk.lowerAttrName}}")
+  @PreAuthorize("@pms.hasPermission('${moduleName}_${pathName}_del')")
+  public SmakerResult removeById(@PathVariable ${pk.attrType} ${pk.lowerAttrName}){
+    return new SmakerResult<>(${classname}Service.removeById(${pk.lowerAttrName}));
+  }
+
+}

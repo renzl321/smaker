@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.smakercloud</groupId>
+		<artifactId>smaker-common</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>smaker-common-log</artifactId>
+	<packaging>jar</packaging>
+
+	<description>smakercloud 日志服务</description>
+
+
+	<dependencies>
+		<!--工具类核心包-->
+		<dependency>
+			<groupId>com.smakercloud</groupId>
+			<artifactId>smaker-common-core</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!--UPMS接口模块-->
+		<dependency>
+			<groupId>com.smakercloud</groupId>
+			<artifactId>smaker-back-api</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!--安全依赖获取上下文信息-->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security.oauth</groupId>
+			<artifactId>spring-security-oauth2</artifactId>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.smakercloud</groupId>
+		<artifactId>smaker</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<artifactId>smaker-common-security</artifactId>
+	<packaging>jar</packaging>
+
+	<description>smaker 工具类</description>
+
+
+	<dependencies>
+		<!--工具类核心包-->
+		<dependency>
+			<groupId>com.smakercloud</groupId>
+			<artifactId>smaker-common-core</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<!--安全模块-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-security</artifactId>
+		</dependency>
+		<!--UPMS API-->
+		<dependency>
+			<groupId>com.smakercloud</groupId>
+			<artifactId>smaker-back-api</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+	</dependencies>
+</project>

@@ -1,0 +1,16 @@
+server:
+  port: 5003
+
+spring:
+  application:
+    name: smaker-codegen
+  profiles:
+    active: dev
+  #配置中心
+  cloud:
+    nacos:
+      discovery:
+        server-addr: smakercloud-nacos:8848
+logging:
+  level:
+    root: info

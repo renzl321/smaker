@@ -1,0 +1,16 @@
+server:
+  port: 4000
+
+spring:
+  application:
+    name: smaker-back
+  # 配置中心
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+      config:
+          file-extension: yml
+          server-addr: smakercloud-nacos:8848
+  profiles:
+    active: dev
