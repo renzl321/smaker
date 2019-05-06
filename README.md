@@ -1,10 +1,8 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![codecov](https://codecov.io/gh/zhoutaoo/SpringCloud/branch/master/graph/badge.svg)](https://codecov.io/gh/zhoutaoo/SpringCloud)
 
-## 
 
-# 快速开始 smaker-cloud**
+# 快速开始 smaker-cloud
 
 ### 先决条件
 
