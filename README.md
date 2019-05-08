@@ -1,4 +1,3 @@
-
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
@@ -17,7 +16,6 @@
   **编译与运行**
 
   ```
-  git clone https://github.com/fanxinglong/fisher
   先配置数据库，然后reids，启动mysql,启动nacos
   启动顺序：
   - smaker-auth
@@ -30,10 +28,13 @@
   
   如有问题请直接在 Issues 中提，或者您发现问题并有非常好的解决方案，欢迎 PR 👍
   
-  传送门：前端项目地址
+  
   ```
 
+传送门：[前端项目地址](https://github.com/renzl321/smaker-admin)
+
 # **smaker-cloud**是基于`Spring Cloud`微`服务`化`开发平台`，具有统一授权、认证后台管理系统，其中包含具备用户管理、资源权限管理、网关API
+
 管理等多个模块，支持多业务系统并行开发，可以作为后端服务的开发脚手架。代码简洁，架构清晰，适合学习和直接项目中使用。
 #技术栈
 
