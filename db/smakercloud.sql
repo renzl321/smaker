@@ -13,7 +13,7 @@
 
  Date: 02/01/2019 20:51:15 PM
 */
-DROP DATABASE IF EXISTS `smakercloud`;
+DROP DATABASE IF EXISTS `smaker`;
 CREATE DATABASE  `smakercloud` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
 
 SET NAMES utf8;
