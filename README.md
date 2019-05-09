@@ -16,7 +16,15 @@
   **编译与运行**
 
   ```
-  先配置数据库，然后reids，启动mysql,启动nacos
+  先配置数据库，
+  然后reids，
+  启动mysql,
+  启动nacos(导入db目录中的nacos-config.sql到nacos数据库中)
+  配置hosts文件，建议使用switchhosts工具
+  127.0.0.1   smakercloud-mysql
+  127.0.0.1   smakercloud-redis
+  127.0.0.1   smakercloud-gateway
+  127.0.0.1 	smakercloud-nacos
   启动顺序：
   - smaker-auth
   - smaker-back
